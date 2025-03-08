@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开源软件镜像站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+
+        /* 主内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* 公告栏 */
+        .announcement {
+            background: #fff3cd;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+
+        /* 快速链接 */
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-link {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* 镜像列表 */
+        .mirror-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .mirror-category {
+            background: white;
+            padding: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+
+        .mirror-category h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .mirror-category a {
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+            padding: 0.3rem 0;
+        }
+
+        /* 页脚 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: #95a5a6;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>开源软件镜像站</h1>
+            <div class="nav-links">
+                <a href="#help">使用帮助</a>
+                <a href="#status">状态</a>
+                <a href="#docs">文档</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="announcement">
+            📢 最新公告：本站每日凌晨3点进行同步更新，同步期间可能出现暂时访问不畅
+        </div>
+
+        <div class="quick-links">
+            <div class="quick-link">Ubuntu</div>
+            <div class="quick-link">CentOS</div>
+            <div class="quick-link">Debian</div>
+            <div class="quick-link">Docker</div>
+        </div>
+
+        <div class="mirror-list">
+            <div class="mirror-category">
+                <h3>操作系统</h3>
+                <a href="#">Ubuntu</a>
+                <a href="#">CentOS</a>
+                <a href="#">Debian</a>
+                <a href="#">Arch Linux</a>
+            </div>
+            <div class="mirror-category">
+                <h3>编程语言</h3>
+                <a href="#">Python</a>
+                <a href="#">Ruby</a>
+                <a href="#">Node.js</a>
+                <a href="#">Rust</a>
+            </div>
+            <div class="mirror-category">
+                <h3>开发工具</h3>
+                <a href="#">Git</a>
+                <a href="#">Docker</a>
+                <a href="#">VS Code</a>
+                <a href="#">JetBrains</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <a href="#">加入我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">服务状态</a>
+            </div>
+            <div class="footer-section">
+                <h4>帮助</h4>
+                <a href="#">使用指南</a>
+                <a href="#">常见问题</a>
+                <a href="#">镜像配置</a>
+            </div>
+            <div class="footer-section">
+                <h4>协议</h4>
+                <a href="#">用户协议</a>
+                <a href="#">隐私政策</a>
+                <a href="#">免责声明</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
